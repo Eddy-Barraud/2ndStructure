@@ -19,7 +19,7 @@ Generated heatmap values have these meanings :
 
 The python script behind the app is using [Seaborn](https://github.com/mwaskom/seaborn) and [MDTraj](https://github.com/mdtraj/mdtraj) libraries.
 
-1. Create files only for protein/residue of interest with GROMACS
+1. Create files containing only protein/residues of interest with GROMACS
 
 Example : 
 
@@ -31,4 +31,5 @@ Example :
 
 3. Run the script.
 
-It will create a file, named filename.dssp.png.
+It will create a file, named filename.dssp.png, for each combinations of filename.xtc/filename.gro.
+If you want multiple plots for specific ranges of residues, uncomment the `dfT2` code part.

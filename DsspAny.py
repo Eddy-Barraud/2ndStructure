@@ -54,6 +54,7 @@ def doDssp(filename) :
     ax.set_xlabel("Residue N°")
     plt.savefig(filename+'.dssp.png')
 
+    # Uncomment everything below and change the range(#,#) if wanted
     #dfT2=df.loc[[str(i) for i in range(40,57)]].transpose()
     #fig, ax = plt.subplots()
     #ax = sns.heatmap(dfT2, vmin=1, vmax=3,cmap=customCmap, ax=ax)
@@ -61,7 +62,6 @@ def doDssp(filename) :
     #ax.set_ylabel("Time (ps)")
     #ax.set_xlabel("Residue N°")
     #plt.savefig(filename+'.dssp.LID.png')
-
 
     print("1: Coil or Undefined; 2: Helix; 3: Strand")
     return True
